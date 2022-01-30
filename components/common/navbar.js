@@ -13,8 +13,8 @@ const Navbar = () => {
 
   const pages = [
     {
-      title: "About Me",
-      slug: "about_me"
+      title: "Home",
+      slug: "home"
     },
     {
       title: "Projects",
@@ -28,8 +28,8 @@ const Navbar = () => {
 
   const handleNavigation = (slug) => {
 
-    if (slug === 'about_me') {
-      window.location.href = "/about-me";
+    if (slug === 'home') {
+      window.location.href = "/";
     }
     else if (slug === 'projects') {
       window.location.href = "/projects";
