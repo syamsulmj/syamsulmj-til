@@ -9,6 +9,8 @@ import {
   Avatar,
   Typography
 } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Home = () => {
   const handleResume = () => {
@@ -28,6 +30,24 @@ const Home = () => {
           <a href="/SYAMSUL_MJ_CV_DEC_2021.pdf" target="_blank" className={Styles.bigBtn}>
             Get My Resume
           </a>
+        </div>
+        <div className={Styles.socialMedia}>
+          <Grid container spacing={4} justifyContent="center">
+            <Grid item>
+              <a href="https://github.com/syamsulmj" target="_blank">
+                <Avatar sx={{ bgcolor: '#f4b942' }}>
+                  <GitHubIcon style={{color: '#000'}}/>
+                </Avatar>
+              </a>
+            </Grid>
+            <Grid item>
+              <a href="https://www.linkedin.com/in/syamsul-mohd-jafri-3370a1158/" target="_blank">
+                <Avatar sx={{ bgcolor: '#f4b942' }}>
+                  <LinkedInIcon style={{color: '#000'}} />
+                </Avatar>
+              </a>
+            </Grid>
+          </Grid>
         </div>
       </div>
       <div className={Styles.profile}>
