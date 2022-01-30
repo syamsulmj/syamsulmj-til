@@ -25,18 +25,18 @@ const MobileMenu = (props) => {
     setAnchor(open);
   };
 
-  const setIcon = (page) => {
-    if (page === 'About Me') {
+  const setIcon = (slug) => {
+    if (slug === 'about_me') {
       return (
         <InfoIcon />
       )
     }
-    else if (page === 'Projects') {
+    else if (slug === 'projects') {
       return (
         <AccountTreeIcon />
       )
     }
-    else if (page === 'Today I Learn - TIL') {
+    else if (slug === 'til') {
       return (
         <MenuBookIcon />
       )
@@ -58,11 +58,11 @@ const MobileMenu = (props) => {
         >
           <List>
             {props.pages.map((page) => (
-              <ListItem button key={page}>
+              <ListItem onClick={() => props.handleNavigation(page.slug)} button key={page.slug}>
                 <ListItemIcon>
-                  {setIcon(page)}
+                  {setIcon(page.slug)}
                 </ListItemIcon>
-                <ListItemText primary={page} />
+                <ListItemText primary={page.title} />
               </ListItem>
             ))}
           </List>
@@ -91,7 +91,7 @@ const MobileMenu = (props) => {
         component="div"
         sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
       >
-        SyamsulMJ
+        Syamsul MJ
       </Typography>
       {renderDrawer()}
     </React.Fragment>

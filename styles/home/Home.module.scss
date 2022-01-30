@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.home {
+  background-color: #12122a;
+  width: 100%;
+  height: auto;
+  font-family: 'Corinthia', cursive;
+  font-family: 'Roboto', sans-serif;
+  padding: 7em 1em 1em;
+
+  .title {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    .bigTitle {
+      margin-bottom: -2em;
+      span {
+        font-size: 11rem;
+      }
+    }
+    .mdTitle {
+      span {
+        font-size: 3.5rem;
+      }
+    }
+
+    .resume {
+      margin-top: 1em;
+      text-align: center;
+      width: 100%;
+      .bigBtn {
+        font-family: 'Corinthia', cursive;
+        font-family: 'Roboto', sans-serif;
+        color: #2e2e2e;
+        background-color: #f4b942;
+        padding: .25em 2.5em;
+        font-size: 2.5rem;
+        border: none;
+        transition: background-color 1s;
+        &:hover {
+          background-color: #e2e2e2;
+        }
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      padding-top: 6em;
+      .bigTitle {
+        margin-bottom: 0;
+        span {
+          font-size: 7rem;
+        }
+      }
+      .mdTitle {
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      .resume {
+        .bigBtn {
+          padding: .25em 3em;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+
+  }
+
+  .profile {
+    color: #ffffff;
+    font-family: 'Corinthia', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15em;
+    margin-right: 15em;
+
+    .aboutMe {
+      .amTitle {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .amContent {
+        text-align: justify;
+        font-size: 1.5rem;
+        margin-top: .75em;
+      }
+    }
+    .experience {
+      .expTitle {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .expContent {
+        text-align: justify;
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 720px) {
+      margin-left: 0;
+      margin-right: 0;
+      .aboutMe {
+        .amContent {
+          font-size: 1rem;
+        }
+        .content {
+          font-size: 1.5rem;
+          margin-top: 1em;
+        }
+      }
+      .experience {
+        .expTitle {
+          font-size: 1rem;
+        }
+        .expContent {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

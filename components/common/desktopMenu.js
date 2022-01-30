@@ -18,15 +18,16 @@ const DesktopMenu = (props) => {
         component="div"
         sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
       >
-        SyamsulMJ
+        Syamsul MJ
       </Typography>
       <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
         {props.pages.map((page) => (
           <Button
-            key={page}
+            key={page.slug}
+            onClick={() => props.handleNavigation(page.slug)}
             sx={{ my: 2, color: 'white', display: 'block' }}
           >
-            {page}
+            {page.title}
           </Button>
         ))}
       </Box>
