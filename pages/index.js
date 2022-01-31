@@ -8,6 +8,7 @@ const App = () => {
     <React.Fragment>
       <Head>
         <title>Syamsul MJ</title>
+        <link rel="shortcut icon" href="/icons/my-face.jpeg" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />

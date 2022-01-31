@@ -24,11 +24,11 @@ const Home = () => {
           <span>HELLO</span>
         </div>
         <div className={Styles.mdTitle}>
-          <span>I Am Web Developer</span>
+          <span>I AM WEB DEVELOPER</span>
         </div>
         <div className={Styles.resume}>
           <a href="/SYAMSUL_MJ_CV_DEC_2021.pdf" target="_blank" className={Styles.bigBtn}>
-            Get My Resume
+            GET MY RESUME
           </a>
         </div>
         <div className={Styles.socialMedia}>
@@ -61,6 +61,7 @@ const Home = () => {
               MAINLY ON ELIXIR/PHOENIX, REACTJS,
               LARAVEL
             </div>
+            <div className={Styles.amContentLiner} />
           </Grid>
           <Grid className={Styles.experience} item xs={12} sm={8}>
             <div className={Styles.expTitle}>
